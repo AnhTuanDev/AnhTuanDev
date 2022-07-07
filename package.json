@@ -1,0 +1,22 @@
+{
+  "name": "anhtuandev.github.io",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">   <a href=\"https://github.com/AnhTuanDev/anhtuandev\">AnhTuanDev</a> </h1>",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnhTuanDev/anhtuandev.github.io.git"
+  },
+  "author": "AnhTuanDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnhTuanDev/anhtuandev.github.io/issues"
+  },
+  "homepage": "https://github.com/AnhTuanDev/anhtuandev.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.4"
+  }
+}
