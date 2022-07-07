@@ -1,3 +1,3 @@
 <h1 align="center">
-  <a href="/anhtuandev/">AnhTuanDev</a>
+  <a href="https://github.com/AnhTuanDev/anhtuandev">AnhTuanDev</a>
 </h1>
