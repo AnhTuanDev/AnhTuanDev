@@ -26,7 +26,7 @@ body {
     margin-left: 3px;
 }
 
-.ml-3px {
+.mr-3px {
     margin-right: 3px;
 }
 
@@ -35,13 +35,17 @@ body {
     flex-direction: column;
 }
 
+.flex-row {
+    display: flex !important;
+    flex-direction: row;
+}
+
 .items-center {
     align-items: center !important;
 }
 
-.active {
-    display: block !important;
-    animation: scaleTopBottom 1s ease-in-out;
+.hidden {
+    display: none;
 }
 
 .fixed {

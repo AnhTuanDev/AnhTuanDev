@@ -22,19 +22,6 @@ let PageTransitions = () => {
 
         if(id) {
 
-            /*
-            sectBtns.forEach((btn) => {
-                btn.classList.remove('active');
-            });
-
-            e.target.classList.add('active-btn');
-
-            //hidden other sections === remove active class
-            sections.forEach((section) => {
-                section.classList.remove('active');
-            });
-            */
-
             sections.forEach((sect) => {
                 sect.classList.remove('active');
             });
