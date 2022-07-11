@@ -1,0 +1,91 @@
+@use '_theme';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+body {
+    color: var(--color-base-content);
+    background-color: var(--color-base-300);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.1rem;
+    transition: all 0.4 ease-in-out;
+}
+
+.ml-3px {
+    margin-left: 3px;
+}
+
+.ml-3px {
+    margin-right: 3px;
+}
+
+.flex-col {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center !important;
+}
+
+.active {
+    display: block !important;
+    animation: scaleTopBottom 1s ease-in-out;
+}
+
+.fixed {
+    position: fixed !important;
+}
+
+.relative {
+    position: relative !important;
+}
+
+.absolute {
+    position: absolute !important;
+}
+
+.btn {
+    display: inline-flex;
+    align-self: center;
+}
+
+.btn-sm {
+    padding: 3px 6px;
+}
+
+.btn-md {
+    padding: 4px 9px;
+}
+
+.rounded {
+    border-radius: 6px;
+}
+
+.rounded-sm {
+    border-radius: 9px;
+}
+
+.rounded-md {
+    border-radius: 12px;
+}
+
+.rounded-full {
+    border-radius: 50%;
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+}
+

@@ -1,65 +1,99 @@
 <!DOCTYPE html>
 <html lang="vi">
 
-<head>
-  <meta charset="utf-8">
-  <title>Anh Tuan Dev</title>
-  <meta name="description" content="AnhTuanDev">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="src/styles/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
-      rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Anh Tuan Dev</title>
+        <meta name="description" content="AnhTuanDev">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="/src/icons/icon.svg">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="src/styles/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    </head>
 
-<body class="body">
+    <body>
 
-  <div class="main">
-    <!-- header -->
-    <header class="header section sec1 active">
-        <span class="material-icons-outlined">rocket_launch</span>
-        <a href="www.github.com/AnhTuanDev/anhtuandev.github.io">
-            Anh Tuan Dev
-        </a>
-    </header>
-    <!-- end header -->
-    <!-- main -->
-    <main>
-        <section class="section sec1 about"></section>
-        <section class="section sec2 portfolio"></section>
-        <section class="section sec3 blogs"></section>
-        <section class="section sec4 contact"></section>
-    </main>
-    <!-- end main -->
-    <!-- controlls -->
-    <div class="controlls">
+        <div class="main-content">
 
-        <div class="control control-1 active-btn">
-            <span class="material-icons-outlined">home</span>
+            <!-- header -->
+            <header class="header section sec1 active" id="home">
+                <div class="header-content">
+                    <!-- left header -->
+                    <div class="left-header">
+                        <div class="h-shape"></div>
+                        <div class="avatar-container flex-col items-center">
+                            <img src="src/images/avatar.jpg" alt="Anh Tuan Dev" class="avartar">
+                            <a href="www.github.com/AnhTuanDev/anhtuandev.github.io"> Anh Tuan Dev </a>
+                        </div>
+                    </div>
+                    <!-- end left header -->
+                    <!-- right header -->
+                    <div class="right-header">
+
+                        <h1 class="header-author">
+                            Xin chào, Tôi là <span class="header-author-name">Anh Tuấn</span>
+                            một Developer.
+                        </h1>
+                        <p>
+                            Tôi là một develper, tôi thích viết css và html.
+                            Tôi xem đó là một sở thích hàng đầu.
+                            Php cũng là một ngôn ngữ lập trình mà tôi yêu thích
+                            cùng với gdscript.
+                            Dolor eos atque vel assumenda iure! 
+                            Quisquam molestias veritatis 
+                        </p>
+                        <a class="right-header-btn btn btn-md bg-primary rounded" href="#">
+                            <span class="mr-3px"> Download cv </span>
+                            <span class="material-icons-outlined">download</span>
+                        </a>
+
+                    </div>
+                    <!-- end right header -->
+                </div>
+            </header>
+            <!-- end header -->
+            <!-- main -->
+            <main>
+                <section class="section sec2 about"     id="about"></section>
+                <section class="section sec3 portfolio" id="portfolio"></section>
+                <section class="section sec4 blogs"     id="blogs"></section>
+                <section class="section sec5 contact"   id="contact"></section>
+            </main>
+            <!-- end main -->
+            <!-- controlls -->
+            <div class="controlls">
+
+                <div class="control control-1 active-btn" data-id="home">
+                    <span class="material-icons-outlined">home</span>
+                </div>
+
+                <div class="control control-2" data-id="about">
+                    <span class="material-icons-outlined">person</span>
+                </div>
+
+                <div class="control control-3" data-id="portfolio">
+                    <span class="material-icons-outlined">card_travel</span>
+                </div>
+
+                <div class="control control-4" data-id="blogs">
+                    <span class="material-icons-outlined">newspaper</span>
+                </div>
+
+                <div class="control control-5" data-id="contact">
+                    <span class="material-icons-outlined">contact_mail</span>
+                </div>
+
+            </div>
+            <!-- end controlls -->
         </div>
 
-        <div class="control control-2" data-id="about">
-            <span class="material-icons-outlined">person</span>
-        </div>
 
-        <div class="control control-3" data-id="portfolio">
-            <span class="material-icons-outlined">card_travel</span>
-        </div>
+        <!-- scripts -->
+        <script src="src/js/app.js"></script>
+        <!-- end scripts -->
 
-        <div class="control control-4" data-id="blogs">
-            <span class="material-icons-outlined">newspaper</span>
-        </div>
-
-        <div class="control control-5" data-id="contact">
-            <span class="material-icons-outlined">contact_mail</span>
-        </div>
-
-    </div>
-    <!-- end controlls -->
-  </div>
-
-  <script src="src/js/scripts.js"></script>
-
-</body>
+    </body>
 
 </html>
