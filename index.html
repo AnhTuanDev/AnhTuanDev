@@ -6,17 +6,60 @@
   <title>Anh Tuan Dev</title>
   <meta name="description" content="AnhTuanDev">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="src/css/styles.css">
+  <link rel="stylesheet" href="src/styles/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+      rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-indigo-500">
+<body class="body">
 
-  <h1 id="page-title" class="page-title">
-    <a href="www.github.com/AnhTuanDev/anhtuandev.github.io">
-      Anh Tuan Dev
-    </a>
-  </h1>
+  <div class="main">
+    <!-- header -->
+    <header class="header section sec1 active">
+        <span class="material-icons-outlined">rocket_launch</span>
+        <a href="www.github.com/AnhTuanDev/anhtuandev.github.io">
+            Anh Tuan Dev
+        </a>
+    </header>
+    <!-- end header -->
+    <!-- main -->
+    <main>
+        <section class="section sec1 about"></section>
+        <section class="section sec2 portfolio"></section>
+        <section class="section sec3 blogs"></section>
+        <section class="section sec4 contact"></section>
+    </main>
+    <!-- end main -->
+    <!-- controlls -->
+    <div class="controlls">
+
+        <div class="control control-1 active-btn">
+            <span class="material-icons-outlined">home</span>
+        </div>
+
+        <div class="control control-2" data-id="about">
+            <span class="material-icons-outlined">person</span>
+        </div>
+
+        <div class="control control-3" data-id="portfolio">
+            <span class="material-icons-outlined">card_travel</span>
+        </div>
+
+        <div class="control control-4" data-id="blogs">
+            <span class="material-icons-outlined">newspaper</span>
+        </div>
+
+        <div class="control control-5" data-id="contact">
+            <span class="material-icons-outlined">contact_mail</span>
+        </div>
+
+    </div>
+    <!-- end controlls -->
+  </div>
+
   <script src="src/js/scripts.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+:root {
+  --color-primary: #641AE6;
+  --color-primary-focus: #5014B8;
+  --color-primary-content: #FFFFFF;
+  --color-secondary: #D926A9;
+  --color-secondary-focus: #AD1F87;
+  --color-secondary-content: #FFFFFF;
+  --color-accent: #1FB2A6;
+  --color-accent-focus: #198F85;
+  --color-accent-content: #FFFFFF;
+  --color-neutral: #191D24;
+  --color-neutral-focus: #2A303C;
+  --color-neutral-content: #2A303C;
+  --color-base-100: #2A303C;
+  --color-base-200: #242933;
+  --color-base-300: #1F242D;
+  --color-base-content: #C7D2D8;
+  --color-info: #3ABFF8;
+  --color-info-content: #002B3D;
+  --color-success: #36D399;
+  --color-success-content: #2A303C;
+  --color-warning: #FBBD23;
+  --color-warning-content: #382800;
+  --color-error: #F87272;
+  --color-error-content: #21181E;
+  --box-shadow-1: 0 3px 5px rgba(0,0,0, 0.3);
+  --br-sm-2: 14px;
+}
+
+body {
+  color: var(--color-base-content);
+  background-color: var(--color-base-300);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.1rem;
+  transition: all 0.4 ease-in-out;
+}
+
+header {
+  height: 100vh;
+  overflow: hidden;
+  color: var(--color-base-content);
+}
+
+section {
+  min-height: 10vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 3rem 18rem;
+}
+
+.section {
+  transform: translateY(-100%) scale(0);
+  transition: all 0.4s ease-in-out;
+  color: var(--color-base-content);
+}
+
+.sec1 {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.sec2 {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.sec3 {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.controlls {
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  right: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+}
+.controlls .control {
+  padding: 0.5rem;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  color: var(--color-base-content);
+  background-color: var(--color-base-100);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.7rem 0;
+  box-shadow: var(--box-shadow-1);
+}
+
+/*# sourceMappingURL=styles.css.map */
