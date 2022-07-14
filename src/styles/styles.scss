@@ -48,6 +48,13 @@
     --color-error: #F87272;
     --color-error-content: #21181E;
 
+    --color-gray-50: #F8FAFC;
+    --color-gray-100: #F3F4F6;
+    --color-gray-200: #E2E8F0;
+    --color-gray-300: #CBD5E1;
+    --color-gray-400: #94A3B8;
+    --color-gray-500: #64748B;
+
     --box-shadow-1: 0 3px 5px rgba(0,0,0, 0.3);
 }
 
@@ -227,15 +234,20 @@ section {
     }
 }//about container
 
-.about-stats {
+.main-container {
     max-width: 1024px; 
-    margin: 3rem auto; 
-    padding-bottom: 4rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
 
-    .stat-title {
-        font-size: 1.5rem;
-        margin-bottom: 0.7rem;
-    }
+.main-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+    text-transform: uppercase;
+}
+
+.about-stats {
     .progress-bars {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -274,7 +286,61 @@ section {
     }
 }
 
-/******** end about *********/
+/******** Timeline *********/
+
+.timeline {
+
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+
+    .timeline-item {
+
+        position: relative;
+        padding-left: 3rem;
+        border-left: 1px solid var(--color-base-100);
+
+        .tl-icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: var(--color-primary);
+            border-radius: 50%;
+            padding: 0.5rem;
+            transform: translateX(-50%);
+            span {
+                align-self: center;
+                align-items: center;
+                font-size: 1.3rem;
+            }
+        }
+        .tl-duration {
+            padding: 0.2rem 0.6rem;
+            background-color: var(--color-base-100);
+            border-radius: 15px;
+            display: inline-flex;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        h5 {
+            font-size: 1.32rem;
+            padding: 1rem 0;
+            font-weight: 600;
+            text-transform: uppercase;
+            span {
+                color: var(--color-gray-400);
+                font-weight: 500;
+                font-size: 1.2rem;
+            }
+        }
+        .description {
+            color: var(--color-gray-400);
+        }
+    }
+
+}
 
 
 

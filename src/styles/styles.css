@@ -23,6 +23,12 @@
   --color-warning-content: #382800;
   --color-error: #F87272;
   --color-error-content: #21181E;
+  --color-gray-50: #F8FAFC;
+  --color-gray-100: #F3F4F6;
+  --color-gray-200: #E2E8F0;
+  --color-gray-300: #CBD5E1;
+  --color-gray-400: #94A3B8;
+  --color-gray-500: #64748B;
   --box-shadow-1: 0 3px 5px rgba(0,0,0, 0.3);
 }
 
@@ -310,6 +316,12 @@ body {
   --color-warning-content: #382800;
   --color-error: #F87272;
   --color-error-content: #21181E;
+  --color-gray-50: #F8FAFC;
+  --color-gray-100: #F3F4F6;
+  --color-gray-200: #E2E8F0;
+  --color-gray-300: #CBD5E1;
+  --color-gray-400: #94A3B8;
+  --color-gray-500: #64748B;
   --box-shadow-1: 0 3px 5px rgba(0,0,0, 0.3);
 }
 
@@ -494,15 +506,19 @@ section {
   background-color: rgba(253, 253, 253, 0.2);
 }
 
-.about-stats {
+.main-container {
   max-width: 1024px;
-  margin: 3rem auto;
-  padding-bottom: 4rem;
+  margin: 0 auto;
+  margin-top: 3rem;
 }
-.about-stats .stat-title {
+
+.main-title {
+  text-align: center;
   font-size: 1.5rem;
   margin-bottom: 0.7rem;
+  text-transform: uppercase;
 }
+
 .about-stats .progress-bars {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -540,6 +556,54 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-/******** end about *********/
+/******** Timeline *********/
+.timeline {
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.timeline .timeline-item {
+  position: relative;
+  padding-left: 3rem;
+  border-left: 1px solid var(--color-base-100);
+}
+.timeline .timeline-item .tl-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  padding: 0.5rem;
+  transform: translateX(-50%);
+}
+.timeline .timeline-item .tl-icon span {
+  align-self: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.timeline .timeline-item .tl-duration {
+  padding: 0.2rem 0.6rem;
+  background-color: var(--color-base-100);
+  border-radius: 15px;
+  display: inline-flex;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.timeline .timeline-item h5 {
+  font-size: 1.32rem;
+  padding: 1rem 0;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.timeline .timeline-item h5 span {
+  color: var(--color-gray-400);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.timeline .timeline-item .description {
+  color: var(--color-gray-400);
+}
 
 /*# sourceMappingURL=styles.css.map */
