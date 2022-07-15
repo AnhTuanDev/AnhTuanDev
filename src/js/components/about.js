@@ -73,7 +73,7 @@ let GenerateTimelineItems = () => {
 
                 <div class="timeline-item">
                     <div class="tl-icon">
-                        <span class="material-icons-outlined">card_travel</span>
+                        <span class="material-icons-outlined"> workspace_premium </span>
                     </div>
                     <p class="tl-duration">${duration}</p>
                     <h5>${work}<span> - ${company}</span></h5>
