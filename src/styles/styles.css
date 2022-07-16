@@ -429,32 +429,28 @@ section {
   cursor: pointer;
 }
 
+/*
 .page-title-container {
-  text-align: center;
-  padding: 0.5rem 0;
-  margin-bottom: 3rem;
-}
-.page-title-container .page-title {
-  position: relative;
-  text-transform: uppercase;
-  font-size: 3rem;
-  font-weight: 700;
-}
-.page-title-container .page-title span {
-  color: var(--color-primary);
-}
-.page-title-container .page-title .page-bg-text {
-  z-index: -1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: var(--color-base-100) !important;
-  transition: all 0.3s ease-in-out;
-  transform: translate(-50%, -50%);
-  font-weight: 800;
-  font-size: 6.3rem;
-}
-
+    text-align: center;
+    padding: 0.5rem 0;
+    margin-bottom: 3rem;
+    .page-title {
+        position: relative;
+        text-transform: uppercase;
+        font-size: 3rem; font-weight: 700;
+        span { color: var(--color-primary); }
+        .page-bg-text {
+            z-index: -1;
+            position: absolute;
+            top: 50%; left: 50%;
+            color: var(--color-base-100) !important;
+            transition: all 0.3s ease-in-out;
+            transform: translate(-50%, -50%);
+            font-weight: 800; font-size: 6.3rem;
+        }
+    }
+}//end about-title
+*/
 .about-container {
   max-width: 1024px;
   margin: 0 auto;
