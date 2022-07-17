@@ -1,6 +1,12 @@
 const  aboutItems = document.querySelector('#about-items');
+
+const header = document.querySelector('.header');
+
 const  timelineItems = document.querySelector('#timeline-items');
 
+/*-------------- Function ----------------*/
+
+//About
 let aboutItemsData = [
     {
         complete: '120+',
@@ -86,5 +92,7 @@ let GenerateTimelineItems = () => {
 
 GenerateTimelineItems();
 
+
+//export 
 export { GenerateAboutItems, GenerateTimelineItems };
 

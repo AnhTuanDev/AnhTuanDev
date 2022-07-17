@@ -30,6 +30,7 @@
   --color-gray-400: #94A3B8;
   --color-gray-500: #64748B;
   --box-shadow-1: 0 3px 5px rgba(0,0,0, 0.3);
+  --box-shadow-2: 1px 4px 6px rgba(0,0,0, 0.5);
 }
 
 * {
@@ -291,41 +292,6 @@ body {
   align-self: flex-start;
 }
 
-:root {
-  --color-primary: #641AE6;
-  --color-primary-focus: #5014B8;
-  --color-primary-content: #FFFFFF;
-  --color-secondary: #D926A9;
-  --color-secondary-focus: #AD1F87;
-  --color-secondary-content: #FFFFFF;
-  --color-accent: #1FB2A6;
-  --color-accent-focus: #198F85;
-  --color-accent-content: #FFFFFF;
-  --color-neutral: #191D24;
-  --color-neutral-focus: #2A303C;
-  --color-neutral-content: #2A303C;
-  --color-base-100: #2A303C;
-  --color-base-200: #242933;
-  --color-base-300: #1F242D;
-  --color-base-content: #C7D2D8;
-  --color-info: #3ABFF8;
-  --color-info-content: #002B3D;
-  --color-success: #36D399;
-  --color-success-content: #2A303C;
-  --color-warning: #FBBD23;
-  --color-warning-content: #382800;
-  --color-error: #F87272;
-  --color-error-content: #21181E;
-  --color-gray-50: #F8FAFC;
-  --color-gray-100: #F3F4F6;
-  --color-gray-200: #E2E8F0;
-  --color-gray-300: #CBD5E1;
-  --color-gray-400: #94A3B8;
-  --color-gray-500: #64748B;
-  --box-shadow-1: 1px 3px 5px rgba(0,0,0, 0.3);
-  --box-shadow-2: 1px 4px 6px rgba(0,0,0, 0.5);
-}
-
 .active {
   display: block !important;
   animation: scaleTopBottom 0.5s ease-in;
@@ -334,7 +300,6 @@ body {
 .main-container {
   max-width: 1024px;
   margin: 0 auto;
-  margin-top: 4rem;
 }
 
 .main-title {
@@ -429,28 +394,6 @@ section {
   cursor: pointer;
 }
 
-/*
-.page-title-container {
-    text-align: center;
-    padding: 0.5rem 0;
-    margin-bottom: 3rem;
-    .page-title {
-        position: relative;
-        text-transform: uppercase;
-        font-size: 3rem; font-weight: 700;
-        span { color: var(--color-primary); }
-        .page-bg-text {
-            z-index: -1;
-            position: absolute;
-            top: 50%; left: 50%;
-            color: var(--color-base-100) !important;
-            transition: all 0.3s ease-in-out;
-            transform: translate(-50%, -50%);
-            font-weight: 800; font-size: 6.3rem;
-        }
-    }
-}//end about-title
-*/
 .about-container {
   max-width: 1024px;
   margin: 0 auto;
