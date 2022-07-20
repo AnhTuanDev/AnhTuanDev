@@ -1,4 +1,4 @@
-
+//page title
 export class PageTitle extends HTMLElement {
 
     data =  {
@@ -16,7 +16,9 @@ export class PageTitle extends HTMLElement {
     }
 
     static get observedAttributes() {
+
         return [ 'title', 'subtitle', 'bgtext', 'classes' ];
+
     }
 
     attributeChangedCallback(name, oldValue, newValue) {
@@ -44,7 +46,7 @@ export class PageTitle extends HTMLElement {
             ${this.style}
             <div class="page-title-container">
                 <h2 class="page-title">${this.data.title}
-                    <span class="span-text sub-page-title">${this.data.subTitle}</span>
+                    <span class="sub-page-title">${this.data.subTitle}</span>
                     <span class="page-bg-text">${this.data.bgText}</span>
                 </h2>
                 <slot name="test"></slot>
@@ -55,20 +57,20 @@ export class PageTitle extends HTMLElement {
     get style() {
         return `
             <style>
-                
                 .page-title-container {
                     text-align: center;
                     padding: 0.5rem 0;
                     margin-bottom: 3rem;
                 }
-                
                 .page-title-container .page-title {
                     position: relative;
                     text-transform: uppercase;
                     font-size: 3rem; font-weight: 700;
                     span { color: var(--color-primary); }
                 }
-
+                .page-title-container .page-title .sub-page-title {
+                    color: var(--color-primary);
+                }
                 .page-title-container .page-title .page-bg-text {
                     z-index: -1;
                     position: absolute;
@@ -84,6 +86,7 @@ export class PageTitle extends HTMLElement {
     }
 
 }
+
 
 customElements.define('page-title', PageTitle);
 

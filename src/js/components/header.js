@@ -45,6 +45,4 @@ let RenderHeader = () => {
 
 export default RenderHeader();
 
-//export 
-//export { GenerateTimelineItems };
 

@@ -1,12 +1,46 @@
-const  aboutItems = document.querySelector('#about-items');
 
-const header = document.querySelector('.header');
+const header         = document.querySelector('.header');
 
-const  timelineItems = document.querySelector('#timeline-items');
+const aboutItems     = document.querySelector('#about-items');
+
+const  leftAbout = document.querySelector('.left-about');
+
+const timelineItems  = document.querySelector('#timeline-items');
 
 /*-------------- Function ----------------*/
 
 //About
+
+let LeftAbout = () => {
+
+    return leftAbout.innerHTML = `
+
+        <h4>Thông tin về tôi</h4>
+        <!-- about descript -->
+        <p>
+            Amet adipisicing aliquid placeat voluptatum consequatur 
+            Fuga quas natus tenetur delectus quisquam 
+            Quos reiciendis debitis fugiat nisi fuga! Vero ab
+            Ipsum expedita sunt maxime iusto nemo! 
+            Ea dignissimos corrupti ut accusamus illo. 
+            Earum impedit dolores corrupti debitis eaque 
+            Vero nisi id nisi expedita cupiditate
+            Perspiciatis aliquid aut dolorum est minus
+        </p>
+        <!-- button -->
+        <a class="left-about-btn-container" href="#">
+            <div class="btn-hover-left-slide-outline">
+                <span class="btn-label mr-3px"> Download cv </span>
+                <span class="btn-icon material-icons-outlined">download</span>
+            </div>
+        </a>
+        
+    `;
+}
+
+LeftAbout();
+
+
 let aboutItemsData = [
     {
         complete: '120+',
@@ -94,5 +128,5 @@ GenerateTimelineItems();
 
 
 //export 
-export { GenerateAboutItems, GenerateTimelineItems };
+export { LeftAbout, GenerateAboutItems, GenerateTimelineItems };
 
